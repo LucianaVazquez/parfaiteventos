@@ -43,7 +43,7 @@ transform:scale(1.3);}
 li {list-style: none;
   text-align:center;
 font-size:14px;
-border: 3px ridge #6666;
+border: 3px solid #373741;
 margin-top:2rem;
 margin:1rem;
 padding:3px;}
@@ -97,7 +97,7 @@ opacity: 93%;
 border-radius:2px;}
 
 section{
-width: 90%;
+width: auto;
 margin:auto;}
 
 footer{text-align:center;
@@ -254,7 +254,26 @@ border:3px solid grey;}
 
 .contactanos { margin:2rem;}
 
-.redes_sociales {width:fit-content ;
+.redes_sociales{width:fit-content;
 height: auto;
 margin-left:2rem;
-padding:3px;}    
+padding:3px}
+
+@media screen and (max-width: 768px) {
+	header {
+      display:inline;
+      border:none
+      }
+      nav ul li{
+        display: inline;
+        margin-right: 1rem;
+      border:1px solid grey}
+.bienvenidos article {display:inline;}
+.quienesomos article{margin:2rem;
+         display: inline;}
+.quehacemos article{display:inline;
+            align-items: center;}
+ .quehacemos img{width: 50%;
+              height:50%;
+              margin-right: 2rem;
+        }
